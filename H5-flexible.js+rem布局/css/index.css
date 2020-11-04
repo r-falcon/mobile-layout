@@ -1,0 +1,64 @@
+body {
+  min-width: 320px;
+  /* flexible 默认给我们划分为10等份 */
+  width: 10rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background: #f2f2f2;
+}
+a {
+  text-decoration: none;
+  font-size: 0.333333rem;
+}
+/* 使用cssrem插件可以自动将px值转为对应的rem值  这个插件默认的html文字大小16px */
+
+/* 如果屏幕的宽度超过了750px 就按默认的750的设计稿设计页面*/
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+
+/* search部分 */
+.search_content {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10rem;
+  height: 1.173333rem;
+  background: #ffc001;
+}
+.classify {
+  width: 0.586667rem;
+  height: 0.933333rem;
+  margin: 0.146667rem 0.333333rem 0.133333rem 0.333333rem;
+  background: url(../img/classify.png) no-repeat;
+  background-size: 0.586667rem 0.933333rem;
+}
+.search {
+  flex: 1;
+}
+.search input {
+  outline: none;
+  border: 0;
+  width: 100%;
+  height: 0.88rem;
+  font-size: 0.333333rem;
+  background-color: #fff2cc;
+  margin-top: 0.133333rem;
+  border-radius: 0.44rem;
+  color: #757575;
+  padding-left: 0.733333rem;
+}
+.login {
+  width: 1rem;
+  height: 0.933333rem;
+  line-height: 0.933333rem;
+  text-align: center;
+  margin: 0.133333rem;
+  color: #fff;
+  font-size: 0.333333rem;
+}
